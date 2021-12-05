@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ranking the 4 worst jerseys in the NFL">
+  <title>Travel Bucket List Guide</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Nunito+Sans:ital,wght@0,400;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".menu-icon").addEventListener("click", () => {
+    document.querySelector(".main-menu").classList.toggle("menu-show");
+  });
+});
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="menu-icon">
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="form/">Form</a></li>
+        <li><a
+            href="https://venmo.com/code?user_id=2037441837924352410&created=1632628115.939231&printed=1/">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- move bg-img class to hero so z-index doesn't get messed up - style applied to outermost container -->
+  <div class="hero bg-img">
+    <picture>
+      <source srcset="images/hero-1600.jpg" media="(min-width: 901px)">
+      <source srcset="images/hero-900.jpg" media="(min-width: 501px)">
+      <source srcset="images/hero-600.jpg" media="(max-width: 500px)">
+      <!-- wrong default image. i changed the name and alt -->
+      <img src="images/hero-900.jpg" alt="mountain lake">
+    </picture>
+
+    <!-- I am experimenting with not using an overlay. I moved the overlay down and
+    changed the class to .title -->
+
+    <!-- you were missing a closing div tag for .hero here -->
+  </div>
+
+  <div class="title">
+    <div>
+      <h1>Travel Bucket List</h1>
+      <p>Places I want to go</p>
+    </div>
+  </div>
+
+
+  <div class="scroll-down">Find out more</div>
+  <main>
+    <!-- I pulled the h1 out of the overlay so this isn't needed -->
+    <!-- <div class="full-spacer"></div> -->
+    <article class="panel">
+      <div class="image-wrapper left">
+      <img src="/images/vacay-1.jpg" alt="woohoo vacation">
+      </div>
+      <div class="text-wrapper">
+      <h2>The List</h2>
+      <!-- I was afraid to use any images of these jerseys because they did not show up on the stock image website and I don't know copyright rules-->
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae natus labore veritatis. Provident alias voluptate eos voluptates? Omnis vel numquam non autem nisi, atque earum reprehenderit voluptate cupiditate blanditiis rerum!</p>
+
+      <a href="#" class="button">The Best</a>
+      </div>
+    </article>
+    <!-- I moved your main close tag below this article so you would have two articles inside main.
+I moved the cards out of the article and the button below cards into the article -->
+    <article class="panel">
+      <div class="image-wrapper">
+      <img src="images/vacay-2.jpg" alt="vacation yay">
+      </div>
+      <div class="text-wrapper left">
+      <h2>Article</h2>
+      <p>To make the panels work, it's best to have this be a generic article
+        with an image, not
+        cards.
+      </p>
+      
+
+      <a href="https://venmo.com/code?user_id=2037441837924352410&created=1632628115.939231&printed=1/"
+        class="button">Start Trial</a>
+        </div>
+    </article>
+  </main>
+  <div class="cards">
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/card1.jpg" alt="Explore the ruins of Machu Picchu">
+        </div>
+        <div class="text-wrapper">
+          Explore the ruins of Machu Picchu
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/card2.jpg" alt="San Blas">
+        </div>
+        <div class="text-wrapper">
+          Live on a private island in San Blas
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/card3.jpg" alt="Swiss Alps">
+        </div>
+        <div class="text-wrapper">
+          Explore the Swiss Alps
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/card4.jpg" alt="Egypt">
+        </div>
+        <div class="text-wrapper">
+          Visit Ancient Egypt
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <footer>sup</footer>
+
+</body>
+</html>

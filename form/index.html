@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Nunito+Sans:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="get the hottest takes possible">
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+      </script>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a>Form</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section>
+      <h2>Top Destination Survey</h2>
+      <form>
+        <label for="name">Name:</label>
+    
+        <input type="text" name="name" id="name">
+    
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" required>
+    
+        <label for="phone">Phone number:</label>
+        <input type="tel" name="phone" id="phone">
+    
+        <label for="destination">Your ideal travel destination:</label>
+        <input type="destination" name="destination" id="destination">
+    
+        <fieldset>
+          <legend>Which of the following locations do you most want to visit? <em>(Check all that apply)</em></legend>
+    
+          <input type="checkbox" id="Italy" name="locations" value="Italy">
+          <label for="Italy">Italy</label>
+    
+          <input type="checkbox" id="Peru" name="locations" value="Peru">
+          <label for="Peru">Peru</label>
+    
+          <input type="checkbox" id="France" name="locations" value="France">
+          <label for="France">France</label>
+    
+          <input type="checkbox" id="Carribean" name="locations" value="Carribean">
+          <label for="Carribean">Carribean</label>
+    
+          <input type="checkbox" id="Japan" name="locations" value="Japan">
+          <label for="Japan">Japan</label>
+    
+          <input type="checkbox" id="Thailand" name="locations" value="Thailand">
+          <label for="Thailand">Thailand</label>
+
+          <input type="checkbox" id="other" name="locations" value="other">
+          <label for="other">Other</label>
+        </fieldset>
+    
+        <fieldset>
+          <legend>What is the most responsible for keeping you from traveling?</legend>
+    
+          <input type="radio" name="occupation" id="occupation" value="occupation">
+          <label for="occupation">Occupation</label>
+    
+          <input type="radio" name="school" id="school" value="school">
+          <label for="school">School</label>
+    
+          <input type="radio" name="finance" id="salt" value="finance">
+          <label for="finance">Financial reasons</label>
+    
+          <input type="radio" name="taste" id="fear" value="fear">
+          <label for="fear">Fear</label>
+        </fieldset>
+    
+        <label for="textbox">What are some ways I can improve this website?:</label>
+        <textarea name="textbox" id="textbox" rows="10" placeholder=" syllable count"></textarea>
+    
+        <button>Submit Now</button>
+    
+      </form>
+    </section>
+</body>
+</html>
