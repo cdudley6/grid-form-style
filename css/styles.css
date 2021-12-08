@@ -469,11 +469,20 @@ h4 {
       flex: 1 1 40%;
      }
 }
+
+h5 {
+  color: var(--heading-color);
+  font-family: Epilogue;
+  font-size: 2rem;
+  margin-top: 100px;
+}
+
 form {
   display: grid;
   grid-template-columns: 1fr;
   font-size: 1.4rem;
   line-height: 1.5;
+  margin-top: 100px;
 }
 
 fieldset {
@@ -526,7 +535,7 @@ input:not([type="radio"]):not([type="checkbox"]):hover,
 input:not([type="radio"]):not([type="checkbox"]):focus,
 textarea:hover,
 textarea:focus {
-  outline: 1px solid yellow;
+  outline: 1px solid #A5D1E7;
   background-color: var(--form-bg-color-light);
 }
 
@@ -563,3 +572,43 @@ textarea:focus {
     flex-wrap: nowrap;
   }
 } 
+.hourglass{
+  display:block;
+  background:$bg;
+  margin:3em auto;
+  width:2em;
+  height:4em;
+  animation:hourglass 1s linear infinite;
+}
+
+.outer{
+  fill:$fill;
+}
+
+.middle{
+  fill:$bg;
+}
+
+@keyframes hourglass{
+  0%{
+      transform:rotate(0deg);
+      box-shadow:
+          inset $fill 0 -0em 0 0,
+          inset $bg 0 -2em 0 0,
+          inset $fill 0 -4em 0 0;
+  }
+  80%{
+      transform:rotate(0deg);
+      box-shadow:
+          inset $fill 0 -2em 0 0,
+          inset $bg 0 -2em 0 0,
+          inset $fill 0 -2em 0 0;
+  }
+  100%{
+      transform:rotate(180deg);
+      box-shadow:
+          inset $fill 0 -2em 0 0,
+          inset $bg 0 -2em 0 0,
+          inset $fill 0 -2em 0 0;
+  }
+}
